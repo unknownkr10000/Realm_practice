@@ -1,0 +1,6 @@
+framework module Pods_ch24 {
+  umbrella header "Pods-ch24-umbrella.h"
+
+  export *
+  module * { export * }
+}

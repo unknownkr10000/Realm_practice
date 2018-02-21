@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2567AF53FEB0FE4FEBF85042 /* Pods_ch24.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA24B49AC09FFE4BA07F731 /* Pods_ch24.framework */; };
 		FA0D645B203C7AB400A9E2F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0D645A203C7AB400A9E2F4 /* AppDelegate.swift */; };
 		FA0D645D203C7AB400A9E2F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0D645C203C7AB400A9E2F4 /* ViewController.swift */; };
 		FA0D6460203C7AB400A9E2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0D645E203C7AB400A9E2F4 /* Main.storyboard */; };
 		FA0D6463203C7AB400A9E2F4 /* ch24.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA0D6461203C7AB400A9E2F4 /* ch24.xcdatamodeld */; };
 		FA0D6465203C7AB400A9E2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0D6464203C7AB400A9E2F4 /* Assets.xcassets */; };
 		FA0D6468203C7AB400A9E2F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0D6466203C7AB400A9E2F4 /* LaunchScreen.storyboard */; };
+		FAA68D48203D8A4000A7C7DA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA68D47203D8A4000A7C7DA /* Realm.framework */; };
+		FAA68D49203D8A4000A7C7DA /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAA68D47203D8A4000A7C7DA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FAA68D4A203D8A4000A7C7DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAA68D49203D8A4000A7C7DA /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		14BE7F292808711235D005A2 /* Pods-ch24.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ch24.release.xcconfig"; path = "Pods/Target Support Files/Pods-ch24/Pods-ch24.release.xcconfig"; sourceTree = "<group>"; };
+		794CD65A47E1A5D2599FC555 /* Pods-ch24.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ch24.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ch24/Pods-ch24.debug.xcconfig"; sourceTree = "<group>"; };
+		7FA24B49AC09FFE4BA07F731 /* Pods_ch24.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ch24.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0D6457203C7AB300A9E2F4 /* ch24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ch24.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0D645A203C7AB400A9E2F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA0D645C203C7AB400A9E2F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +44,7 @@
 		FA0D6464203C7AB400A9E2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA0D6467203C7AB400A9E2F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA0D6469203C7AB400A9E2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA68D47203D8A4000A7C7DA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +52,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA68D48203D8A4000A7C7DA /* Realm.framework in Frameworks */,
+				2567AF53FEB0FE4FEBF85042 /* Pods_ch24.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09FF85DCC8653EA15509C21C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				794CD65A47E1A5D2599FC555 /* Pods-ch24.debug.xcconfig */,
+				14BE7F292808711235D005A2 /* Pods-ch24.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3971CE983BC64676CF36699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FA24B49AC09FFE4BA07F731 /* Pods_ch24.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA0D644E203C7AB300A9E2F4 = {
 			isa = PBXGroup;
 			children = (
+				FAA68D47203D8A4000A7C7DA /* Realm.framework */,
 				FA0D6459203C7AB300A9E2F4 /* ch24 */,
 				FA0D6458203C7AB300A9E2F4 /* Products */,
+				09FF85DCC8653EA15509C21C /* Pods */,
+				B3971CE983BC64676CF36699 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +117,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA0D646C203C7AB400A9E2F4 /* Build configuration list for PBXNativeTarget "ch24" */;
 			buildPhases = (
+				7D7ED31212C279F93DF67AB0 /* [CP] Check Pods Manifest.lock */,
 				FA0D6453203C7AB300A9E2F4 /* Sources */,
 				FA0D6454203C7AB300A9E2F4 /* Frameworks */,
 				FA0D6455203C7AB300A9E2F4 /* Resources */,
+				11A31568296F1CA290828DFC /* [CP] Embed Pods Frameworks */,
+				486A542B5EEC6C6FBA09CE25 /* [CP] Copy Pods Resources */,
+				FAA68D4A203D8A4000A7C7DA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +180,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11A31568296F1CA290828DFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ch24/Pods-ch24-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ch24/Pods-ch24-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		486A542B5EEC6C6FBA09CE25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ch24/Pods-ch24-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D7ED31212C279F93DF67AB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ch24-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA0D6453203C7AB300A9E2F4 /* Sources */ = {
@@ -276,10 +379,15 @@
 		};
 		FA0D646D203C7AB400A9E2F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 794CD65A47E1A5D2599FC555 /* Pods-ch24.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42U234FGMT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ch24/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.msk.ch24;
@@ -291,10 +399,15 @@
 		};
 		FA0D646E203C7AB400A9E2F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BE7F292808711235D005A2 /* Pods-ch24.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42U234FGMT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ch24/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.msk.ch24;
